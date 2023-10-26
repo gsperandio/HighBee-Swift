@@ -7,16 +7,6 @@
 
 import SwiftUI
 
-extension Color {
-    init(hex: Int) {
-        self.init(
-            red: Double((hex >> 16) & 0xff) / 255.0,
-            green: Double((hex >> 8) & 0xff) / 255.0,
-            blue: Double(hex & 0xff) / 255.0
-        )
-    }
-}
-
 struct SplashScreenView: View {
     @State private var isActive = false
     @State private var size = 0.8
@@ -24,7 +14,7 @@ struct SplashScreenView: View {
     
     var body: some View {
         if isActive {
-            ContentView()
+             ContentView()
         }else{
             ZStack {
                 Color(hex: 0xf1b729).ignoresSafeArea()

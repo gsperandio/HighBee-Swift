@@ -11,7 +11,7 @@ import SwiftUI
 struct High_BeeApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashScreenView()
+            ContentView()
         }
     }
 }
